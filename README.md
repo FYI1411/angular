@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
 
+## Guide
+
+Thís project is built upon `angular's Tour of Heroes` tutorial.
+
 ## Requirement
 
 run `requirement.txt` for required libraries.
