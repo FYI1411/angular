@@ -1,0 +1,11 @@
+<div class="grid-dashboard" *ngIf="dash_list">
+    <div *ngFor="let dash_item of dash_list" class="card">
+        <img src='assets/{{dash_item.img}}' alt="card_img">
+        <div class="dashboard">
+            <a routerLink={{dash_item.link}}>
+                <h1><b>{{dash_item.title}}</b></h1>
+            </a>
+            <p>{{dash_item.text}}</p>
+        </div>
+    </div>
+</div>

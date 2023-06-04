@@ -1,0 +1,18 @@
+<nav>
+    <div class="menu" *ngIf="nav_list">
+      <div class="logo">
+          <a href="#">Angular</a>
+      </div>
+      <ul>
+          <li *ngFor="let nav_item of nav_list">
+              <a routerLink={{nav_item.link}}>{{nav_item.text}}</a>
+          </li>
+          <li>
+            <a *ngIf="user_login as value; else elseBlock">hello {{value.name}}</a>
+            <ng-template #elseBlock>
+                <a routerLink="/form">login</a>
+            </ng-template>
+          </li>
+      </ul>
+    </div>
+</nav>
